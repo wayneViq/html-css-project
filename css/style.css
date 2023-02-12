@@ -1,11 +1,37 @@
-body{
-    top: 0;
-    display : flex;
+html, body {
+    min-width : 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
-#side-nav {
-    width: 300px;
-    background-color: aqua;
-    height: 100vh;
+#main-body{
+    display: flex;
 }
 
+#navbar{
+    min-width: 300px;
+}
+
+#navbar a {
+    display: block;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width : 960px ){
+    #navbar{
+        /* width: 0px; */
+        background-color: aqua;
+    } 
+    
+}
